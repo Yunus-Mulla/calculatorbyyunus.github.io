@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >calculator</title>
+</head>
+<script>
+    function calculate() {
+        var obtainedMarks=document.getElementById('obt').value;
+        var totalMarks= document.getElementById('tot').value;
+        var Percentage=(obtainedMarks*100)/totalMarks;
+        var d=document.getElementById('perc').innerHTML= Percentage +"%";
+
+    }
+    var a=document.getElementById('add').value
+
+</script>
+<style>
+    *{
+        padding: 1px;
+        margin: 1px;
+        box-sizing: border-box;
+       
+    }
+    nav{
+        background-color: tomato;
+    }
+    section{
+        background-color: azure;
+    }
+    button{
+        margin-left: 50px;
+    }
+</style>
+<body>
+    <nav>
+        <h3 align="center" id="heading"><b>WELCOME TO MY WEBSITE</b></marquee></h3>
+        <p align="center" id="heading2">Here You can calculate your Percentage</p>
+    </nav>
+
+    <section>
+        
+        <p>Your Obtained Marks: <input type="number" id="obt"></p>
+       
+        <p>Total Marks: <input type="number" id="tot"></p>
+        <button onclick="calculate()">Calculate</button>
+        <p>Your Percentage: <span id="perc"></span></p>
+        <br>
+       
+        
+    </section>
+    <center><footer>&copy; <small>go and try</small></footer></center>
+</body>
+</html>
